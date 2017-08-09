@@ -4,5 +4,11 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="C:/Users/CYSN/Downloads/jcodec-0.1.9.jar"/>
 	<classpathentry kind="lib" path="C:/Users/CYSN/Downloads/jcodec-javase-0.1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/vlcj-3.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/vlcj-3.10.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CYSN/Desktop/자바/vlcj/vlcj-3.10.1-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

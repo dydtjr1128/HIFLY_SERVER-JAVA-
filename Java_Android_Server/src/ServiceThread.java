@@ -38,23 +38,29 @@ public class ServiceThread extends Thread {
 	}
 
 	public void run(){
-		sf = new ShowFrame();	
+		//sf = new ShowFrame();	
 		if (decoder == null)
 			 decoder = new H264Decoder();
+		CombineVideo combine = new CombineVideo();
+		combine.recordStart("testRecode");		
 		while(true){
 			try {
 				int size = inputStream.readInt();				
 				byte readByte[] = new byte[size];
-				inputStream.readFully(readByte, 0, size);				
-				ByteBuffer data = ByteBuffer.wrap(readByte);
+				inputStream.readFully(readByte, 0, size);	
+				
+			/*	ByteBuffer data = ByteBuffer.wrap(readByte);
 				Picture out = Picture.create(1280, 720, ColorSpace.YUV420); // Allocate output frame of max size				
 			    Picture pic = decoder.decodeFrame(data, out.getData());
 			    
 				BufferedImage img = AWTUtil.toBufferedImage(pic);
-				sf.setBufferedImage(img);				
+				sf.setBufferedImage(img);		*/	
+				
+				combine.recordData(readByte);				
 				
 			} catch (IOException e) {
-				e.printStackTrace();
+				combine.recordEnd();
+				e.printStackTrace();				
 			}
 		}
 	}
